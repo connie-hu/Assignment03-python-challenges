@@ -1,3 +1,4 @@
+# Assignment03 - python
 # In this challenge, you are tasked with creating a Python script for analyzing the financial records of your company. You will give a set of financial data called budget_data.csv. The dataset is composed of two columns: Date and Profit/Losses. (Thankfully, your company has rather lax standards for accounting so the records are simple.)
 
 # Your task is to create a Python script that analyzes the records to calculate each of the following:
@@ -16,11 +17,11 @@ import numpy as np
 
 
 # path of the file
-path = os.path.join("../budget-data.csv")
+path = ("../budget-data.csv")
 
 # use panda dataframe to split the csv by commas  and store the dataframe into "df"
-csvreader = pd.read_csv(path, delimiter = ',')
-df = pd.DataFrame(csvreader)
+df = pd.read_csv(path)
+df = pd.DataFrame(df)
 
 # define a function to store all calcs
 def calcs():
